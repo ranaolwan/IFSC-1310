@@ -1,6 +1,8 @@
 <!DOCTYPE html> <!--indicate what type and version of HTML-->
 <html lang="en"> <!--the language we use-->
 
+<!--First main part of html document-->
+
 <head> 
     <title> My Life Journey </title> <!--Title of the page-->
     <!--meta tags included here-->
@@ -12,12 +14,15 @@
     <link href="pathtofile.css" rel="stylesheet" />
 </head>
 
+<!--Second main part of html document-->
 <body>
     <main>
         <header class="primary">
             <h1>My Life Journey</h1>
-        </header>
+        </header> <!-- closing h1-->
         <section id="content">
+
+            <section id="content">
             <h2>Where it Began</h2>
 
             <p>My name is Rana Olwan. I am Palestinian and American girl. I graduated from Mills University Studies High School in 
@@ -42,7 +47,7 @@
                 That was the beganing of the story. </p>
 
 
-            <h3> The beganing of Success </h3>
+            <h3 id="success"> The beganing of Success </h3>
 
             <p>After starting my 9th grade all my teacher were imparesseed by my note books and the way I use to memorize using <strong>mindmap</strong>.
                 Everyone want to take my notebooks and kept it with them. I always showed respect to my teachers and I loved all of them. 
@@ -85,8 +90,15 @@
                 taking care of a house. That was stressful which cause me to get up, force everything and be the stringest.</p>
             
             <p> I entered high school here and showed myself as honor student until my graduation which I was the <em>salutatorian</em> at that time.
-                I have been invited to <em>Arkansas Governors Mansion</em> representing my school there. <img src="">I graduated and then I started my college 
+                I have been invited to <em>Arkansas Governors Mansion</em> representing my school there.I graduated and then I started my college 
                 in the Fall of 2022. I showed myself there as well and make it until today.</p>
+
+            <figure>
+                <img src="https://ibb.co/6gp31hh" alt=" Honoring Picture" />
+
+                <a href="https://ibb.co/6gp31hh"><img src="https://i.ibb.co/3B8DMXX/IMG-3183.jpg" alt="IMG-3183" border="0"></a>
+            </figure> <!--closing the image figure-->
+
             <h5>College Journey </h5>
             <p>Rana now is part of:</p>
             <ul>
@@ -96,20 +108,90 @@
                 <li>Orientation Leader</li>
                 <li>PAL Mentor</li>
                 </ul>
-        </section>
+
+                <dl>
+                    <dt><em>Chancellor List</em></dt>
+                    <dd>it recognize undergradute students who have achived a GPA of 3.5 or higher. </dd>
+                    <dt><em>Dean List</em></dt>
+                    <dd> students who enrolled with at least 9 credits with a GPA of 3.5 or higher.</dd>
+                    <dt><em>Orientation Leader</em></dt>
+                    <dd> helping incoming freshman navigating the campus and its resources</dd>
+                    <dt><em>PAL Mentor</em></dt>
+                    <dd> helping and mentoring fresman srudents during their PEAW class.</dd>
+                  </dl>
+
+            <strong><em><p> As of today for this Fall 2023, my classes been with flexiable schedual that makes college easier for me.</p></em></strong>
+
+                  <table border="1">
+                    <caption> Fall 2023</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Time</th>
+                            <th scope="col">Monday</th>
+                            <th scope="col">Tuesday</th>
+                            <th scope="col">Wednesday</th>
+                            <th scope="col">Thursday</th>
+                            <th scope="col">Friday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">09:00 - 10:40</th>
+                            <td> -- </td>
+                            <td>MATH</td>
+                            <td> -- </td>
+                            <td>MATH</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10:50 - 12:05</th>
+                            <td>--</td>
+                            <td>CPSC</td>
+                            <td>--</td>
+                            <td>CPSC</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">12:05 - 01:30</th>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">01:40 - 02:55</th>
+                            <td>IFSC</td>
+                            <td>CPSC</td>
+                            <td>IFSC</td>
+                            <td>CPSC</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">03:05 - 04:30</th>
+                            <td>--</td>
+                            <td>ENGL</td>
+                            <td>--</td>
+                            <td>ENGL</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            <footer>
+             <h6>Written by: Rana Olwan</h6>
+            </footer> <!--closing h6-->
+
+        </section> <!--closing header file 2-6-->
+
         <p><em><strong>Some inspiring resources:</strong></em></p>
         <nav class="primary">
             <ul>
                 <li><a href="https://www.littlerocksoiree.com/post/139725/head-of-the-class-2022-rana-olwan-mills" target="_blank"> High School Success</a></li>
                 <li><a href="https://ualr.edu/newstudents/leaders/">College Success</a></li>
-                <li><a href="#top">Anchor Link</a></li>
+                <li><a href="#success">Read about my success</a></li>
                 <li><a href="mailto:ranaolwan2@gmail.com">Contact</a></li>
             </ul>
         </nav>
             <footer>
                 <h6>&copy; 2023 Rana Olwan| <a href="#top">Back to Top</a></h6>
             </footer>
-    </main>
+    </main> <!--closing all headers on the body-->
 </body>
 
 </html>
