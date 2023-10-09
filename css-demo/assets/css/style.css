@@ -11,6 +11,29 @@ html {
   box-sizing: inherit;
 }
 
+
+
+
+/*  ---------------Responsive Images-----------------  */
+
+img{
+  max-width:100%;
+  height:auto;
+}
+
+
+
+
+
+/*  ---------------Utility Classes-----------------  */
+
+.container{
+  max-width:80vw;
+  margin:40px auto;
+}
+
+
+
 /*  ---------------Global Styles-----------------  */
 
 body {
@@ -28,11 +51,11 @@ header.primary {
   padding-top: 40px:
   padding-right: 40px;
   padding-bottom:40px;
-  padding-left: 40px;
+  padding-left:40px;
   /*T, R, B, L*/
   padding: 20px 40px 20px 40px;
   /*Two Value Top.Bottom/ L/R*/
-  padding:20px 40px;
+  padding: 20px 40px;
 }
 
 header.primary h1 {
@@ -49,7 +72,7 @@ header.primary h1 a {
 
 /*h2 decleration*/
 header.primary h2{
-  font-size: 1.4rem;
+  font-size: 1.4rem; /*relative unit*/
   margin:0;
 }
 
@@ -79,10 +102,109 @@ header.primary nav ul li a{
   padding:5px 10px;
   border:1px solid #c0c0c0;
   border-radius:20px;
-  transition:.5s;
+  transitions:.5s;
 }
 
 /*Chnage when we click on the links*/
 header.primary nav ul li a:hover{
-  background-color:rgb(0,0,0,.8);
+  background-color:rgba(0,0,0,.8);
+}
+
+#intro{
+  /*short hand written*/
+  border-bottom:1px solid #90EE90;
+  padding-bottom:14px;
+}
+
+#intro h2{
+  color:#800080;
+  border-bottom:1px dotted #90EE90;
+}
+
+#content{
+  display:flex;
+  flex-direction:row;
+  gap:5%;
+}
+
+#content .post{
+  box-shadow: 0 4px 8px rgba(0,0,0,.4);
+  padding:10px;
+  border-radius:4px;
+  font-size:.8rem;
+  transation:0.5s;
+}
+
+#content article.post:hoover{
+  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+}
+
+article.pst figure{
+  margin:0;
+}
+
+article.post time.post-date, article.post figcaption, 
+article.post .post-meta
+{
+  text-transform:uppercase;
+  color:#c0c0c0;
+}
+
+article.post a{
+  color:#800080;
+}
+
+article.post a:hoover{
+  text-decoration:none;
+}
+
+article.post img{
+  border: 1px solid #800080;
+  padding:2px 2px 20px 2px;
+  margin:10px auto;
+  background: #c0c0c0;
+}
+
+/*aside*/
+aside[role="complementary"]{
+  background-color: #1728;
+  color:#ffffff;
+  padding:1.9rem;
+}
+
+aside .container{
+  display:flex;
+  flex-direction:row;
+  gap:40px;
+  
+}
+
+
+
+
+
+
+
+
+
+/*  ---------------Media Queries-----------------  */
+
+/* Tell the broweser what querie we using*/
+@media screen and (max-width: 600px) {
+  
+  header.primary nav ul{
+    flex-direction: column;
+  }
+  /*all hyper links are inline blocks by default*/
+  header.primary nav ul a{
+    display:block;
+    max-width:250px;
+    margin:auto;
+    gap:10px;
+  }
+  
+  header.primary nav ul li{
+    
+  }
+   
 }
