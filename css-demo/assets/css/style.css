@@ -39,6 +39,8 @@ img{
 body {
   font-family: "Gabarito", cursive;
   margin: 0;
+  background-image:url("../img/background.jpeg");
+  background-repeat:no-repeat;
 }
 
 header.primary {
