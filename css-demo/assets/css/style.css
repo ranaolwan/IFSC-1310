@@ -307,7 +307,7 @@ dd{
 /*block text on itsown line and bring it down with smaller font*/
 #practice blockquote cite{
   display:block;
-  tect-align:right;
+  text-align:right;
   font-size:.8rem;
   margin-top:10px;
 }
