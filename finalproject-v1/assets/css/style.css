@@ -13,7 +13,7 @@ img{
     max-height:30%;
   }
 
-  /*  ---------------Utility Classes-----------------  */
+ 
 
 
   /*  ---------------Global Styles-----------------  */
@@ -25,19 +25,22 @@ body{
 header.primary{
     background-color: #d4d4d4;
     background-image: url(../img/background.png);
+    opacity:85%;
     max-width:100%;
     height:auto;
     background-size:contain;
     text-align:center;
     text-decoration:double;
     text-shadow: 1px 1px #808080;
-    padding:20px;
+    padding:40px;
 }
 
 header.primary h1{
-  font-size:2rem;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size:3rem;
   margin:10px 0px 10px;
   color: #000;
+  position: relative;
 }
 
 header.primary nav{
@@ -80,18 +83,20 @@ ul li a:hover{
   background-color:#0D6F4B;
 }
 
-/*  ---------------Section Decoration-----------------  */
+/*  ---------------Section Decoration(main)-----------------  */
 #main {
-  border-bottom: 1px solid #90EE90;
-  padding-bottom:20px;
-}
-
-#main h2{
+  padding: 4em 0;
   color:#097969;
   width: 1500px;
-  border: 5px solid #834333;
-  padding: 5px;
-  margin: 5px;
+  border: 10px solid #834333;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+section#main h2{
+  font-family: italic;
+  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -104,83 +109,78 @@ ul li a:hover{
 }
 
 #craft{
- border: 1px solid #ddd;
- border-radius: 4px;
- padding: 5px;
- width: 1000px;
- display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#figure {
-  float: right;
-  width: 1000px;
-  text-align: center;
-  font-size: smaller;
-  text-indent: 0;
-  margin: 50px;
-  padding: 50px;
-}
-
-p.caption{
-  font-size:20px;
-  font-weight:bold;
-  text-align:center;
-  padding:20px;
-  font-style: oblique;
-}
-
-
-#main h3{
-  color:#097969;
-  width: 1500px;
-  border: 5px solid #834333;
-  padding: 5px;
-  margin: 5px;
-  text-align: center;
-}
-
-.description{
-  text-align:left;
-  font-weight:bold;
-  padding:20px;
-  font-size:20px;
-}
-
-#plant{
+  border: 5px solid #ddd;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 50%;
-  height: 50%;
+  border-radius: 6px;
+  padding: 5px;
+  width: 350px;
 }
 
+/*  ---------------Section Decoration (content) -----------------  */
+#content {
+  color:#097969;
+  width: 1500px;
+  border: 10px solid #834333;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
 
+section#content h3,
+#content h3 {
+  flex: 0 0 100%;
+  color:#097969;
+  text-align: center;
+  font-family: italic;
+  font-size: 1.5em;
+}
+
+/*decorate the image*/
+#planting{
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/*#logo{
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}*/
+
+
+
+/*  ---------------Footer-----------------  */
 #ending{
-  background-color:#475927;
+  background-image: url(../img/background.png);
   padding:20px;
-  opacity:70%;
-  color:#000;
-  text-align:center;
-  font-weight:bold;
-  font-size:20px;
+  background-size:contain;
+  max-width:100%;
+  height:auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
 }
-
-
-
-
-
-
-
-
-
-
 
 /*  ---------------Media Queries-----------------  */
 
 /* Tell the broweser what querie we using*/
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 600px) {
+  header.primary nav ul li {
+    margin-bottom: 10px;
+    width: 400px;
+  }
+
+  header.primary nav ul li a {
+    display: block;
+  }
+}
 
 
 
